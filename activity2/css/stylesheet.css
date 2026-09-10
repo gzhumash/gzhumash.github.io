@@ -1,0 +1,42 @@
+li {
+    /* Rule 1: make unordered list look like a normal nav bar */
+    list-style-type: none; /* remove bullet points */
+    display: inline-block; /* this makes them horizontal */
+
+    font-size: 20px;
+
+    /* Rule 2: change li text background color */
+    background-color: rgb(251, 171, 171);
+
+    /* Rule 3a, b: property that enlarges area of li's by 30 on left and right */
+    /* margin: 0px 30px 0px 30px; */
+    /* margin: 0px 30em 0px 30em; */
+
+    /* Rule 4a, b: property that enlarges area of li's and width */
+    /* padding: 0px 30px 0px 30px; */
+    /* padding: 0px 30em 0px 30em; */
+    padding: 0px 40px 0px 40px;
+}
+
+/* Rule 5: move the paragraph in footer to the right side */
+footer {
+    text-align: right;
+}
+
+/* Rule 6: adjust height and width of image */
+img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Rule 7: cause the span element to be placed on top of the image's lower right corner */
+div {
+    position: relative; /* makes the div a boundary box for its children */
+}
+
+span {
+    position: absolute; /* this allows the span to be wherever within the div */
+    top: 380px;
+    left: 10px;
+    color: white; /* for readability */
+}
