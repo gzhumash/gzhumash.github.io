@@ -21,6 +21,8 @@ li {
 /* Rule 5: move the paragraph in footer to the right side */
 footer {
     text-align: right;
+    background-color: rgb(251, 171, 171);
+    height: 50px;
 }
 
 /* Rule 6: adjust height and width of image */
