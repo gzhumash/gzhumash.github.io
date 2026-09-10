@@ -1,0 +1,30 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Slackey', sans-serif;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: rgb(146, 58, 164);
+}
+
+h1 {
+    color: rgb(241, 191, 26);
+}
+
+footer {
+    background-color: rgb(161, 253, 253);
+    padding: 10px;
+    text-align: right;
+}
+
+main {
+    padding: 10px 20px;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Dani Zhumasheva">
+    <meta name="description" content="topic and app description for my project">
+    <title>Project 2</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Slackey&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Project 2 - Stage 1</h1>
+    </header>
+
+    <main>
+    <!-- Topic Description -->
+    <h2>Topic: Gym Exercises</h2>
+
+    <p>
+        When starting out at the gym, it can be overwhelming for some to figure out what exercises work what muscle groups. 
+        Strength training is one of the most effective things a person can do for their health, but it only works if it is done with a plan. 
+        Without knowing which muscle a given exercise targets and how to progress that exercise over time, people end up wasting time in
+        the gym or training in a way that does not move them toward their goals. This project addresses that gap by
+        giving users a simple way to look up exercises based on the exact muscle they want to train.
+    </p>
+
+    <p>
+        I chose this topic because it is one of the things I am most passionate about in my life. I work out every
+        day and I love giving other people fitness advice. Because I already have a strong background in this area, 
+        it will make coming up with accurate content, deciding how it should be organized, and making sure that all the information is correct really easy.
+    </p>
+
+    <p>
+        There are already many fitness apps on the market, but most of them try to do too much at once. They combine
+        workout tracking, meal plans, macro counters, and social feeds into a single cluttered experience, which
+        makes it harder to find a simple answer to a simple question. My web app is intentionally narrow in scope.
+        Instead of trying to be a full fitness platform, it directly and simply answers one question: what exercise
+        targets what muscle, and how should it be performed. That focus on clarity is what will set this project
+        apart from existing solutions.
+    </p>
+
+    <!-- App Description and Data -->
+    <h2>App Description</h2>
+
+    <h3>Page 1: Landing / Home Page</h3>
+    <p>The home page introduces the topic to first time visitors and directs them into the rest of the site. It will contain:</p>
+    <ul>
+        <li><strong>Hero Banner:</strong> A clear title and a one to two sentence statement explaining what the site does.</li>
+        <li><strong>The "Why" and Problem Statement:</strong> A short introduction explaining why structured strength training matters, why targeting specific muscles is key to making progress, and how this app cuts through information overload.</li>
+        <li><strong>About the Creator:</strong> A brief section with a picture of me in the gym (not confirmed, it might be just text) and two to three sentences on why I built this site and my personal experience with lifting. This will be my credentials and authority.</li>
+        <li><strong>Call to Action:</strong> Buttons that send visitors directly to Page 2 ("Find Your Exercises") or Page 3 ("Learn Training Fundamentals").</li>
+    </ul>
+
+    <h3>Page 2: Find Your Exercises</h3>
+    <p>
+        The user first selects a major muscle group, then selects a specific muscle within that group, 
+        and finally sees the exercise data for that exact choice. The muscle groups and subgroups are listed below.
+    </p>
+
+    <ul>
+        <li>
+            Chest
+            <ul>
+                <li>Upper Chest</li>
+                <li>Mid Chest</li>
+                <li>Inner Chest</li>
+                <li>Lower Chest</li>
+            </ul>
+        </li>
+        <li>
+            Back
+            <ul>
+                <li>Lats</li>
+                <li>Upper Back / Rhomboids</li>
+                <li>Lower Back / Erectors</li>
+                <li>Traps</li>
+            </ul>
+        </li>
+        <li>
+            Arms
+            <ul>
+                <li>Biceps</li>
+                <li>Triceps</li>
+                <li>Forearms</li>
+                <li>Brachialis</li>
+            </ul>
+        </li>
+        <li>
+            Shoulders
+            <ul>
+                <li>Front Delts</li>
+                <li>Rear Delts</li>
+                <li>Side Delts</li>
+                <li>Rotator Cuff</li>
+            </ul>
+        </li>
+        <li>
+            Legs
+            <ul>
+                <li>Quads</li>
+                <li>Glutes</li>
+                <li>Hamstrings</li>
+                <li>Calves</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p>
+        Once a specific muscle is chosen, the user will see a list of exercises that target it. Each muscle will
+        have 1 to 4 applicable exercises. For every exercise, the app will show the exercise name, 
+        a short one to three sentence description of proper form, and the equipment or machine required to perform it. 
+        This exercise data will first be stored in a JSON file, and later moved into a database as the project develops.
+    </p>
+
+    <h3>Page 3: Learn Training Fundamentals</h3>
+    <p>
+        This page will explain the foundations of progressive overload and the main training variables, 
+        such as sets, reps, weight, and rest. Where Page 2 tells the user which exercises target which muscles, 
+        this page explains how to actually use those exercises over time to keep making progress. It will also include
+        some basic plans, routines, and splits to follow.
+    </p>
+
+    <h3>Page 4: Contact Us</h3>
+    <p>
+        This page will let visitors sign up to receive personalized training guidance from me directly.
+    </p>
+
+    <!-- Hyperlinks to at least 2 outside sources, references, or data sets related to the topic -->
+    <h2>Outside Sources</h2>
+    <ul>
+        <li><a href="https://www.muscleandstrength.com/exercises" target="_blank" rel="noopener">M&amp;S Exercise Video Database</a> - a video library of exercises organized by body part, used as a reference for exercise names, form cues, and equipment.</li>
+        <li><a href="https://blog.nasm.org/progressive-overload-explained" target="_blank" rel="noopener">NASM: Progressive Overload Explained</a> - an overview of how to apply progressive overload, which will inform the content on Page 3.</li>
+    </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dani Zhumasheva for CSCI 3054</p>
+    </footer>
+</body>
+</html>
