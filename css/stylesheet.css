@@ -1,3 +1,17 @@
+
+h2, h3 {
+    font-family: 'Lato', sans-serif;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+img#steamhappy {
+    width: 300px;
+    height: 300px;
+}
+
 /* Rule 1: adjust header and top-level heading to have color and styling */
 
 header {
@@ -8,14 +22,6 @@ h1 {
     color: rgb(241, 191, 26);
     font-family: 'Slackey', sans-serif;
     text-align: center;
-}
-
-h2, h3 {
-    font-family: 'Lato', sans-serif;
-}
-
-p{
-    font-family: 'Lato', sans-serif;
 }
 
 /* Rule 2: move P1 and A2 to be in the center */
