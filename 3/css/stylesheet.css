@@ -28,3 +28,14 @@ footer {
 main {
     padding: 10px 20px;
 }
+
+.back-link {
+    display: inline-block;
+    color: rgb(146, 58, 164);
+    text-decoration: none;  
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
