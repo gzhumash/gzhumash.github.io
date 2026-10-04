@@ -1,0 +1,644 @@
+{
+  "groups": [
+    {
+      "name": "Chest",
+      "muscles": [
+        {
+          "name": "Upper Chest",
+          "exercises": [
+            {
+              "name": "Incline Bench Presses",
+              "equipment": ["Barbell", "Incline bench with rack", "Weight plates"],
+              "steps": [
+                "Lie on an incline bench with your hands just outside shoulder width, then pinch your shoulder blades together and drive them into the bench.",
+                "Take a deep breath and unrack the bar (with a spotter's help if needed), keeping your upper back tight as the weight settles.",
+                "Unlock your elbows and slowly lower the bar in a straight line until it touches your upper chest.",
+                "Press the bar back up in a straight line by driving yourself into the bench, pushing your feet into the floor, and extending your elbows."
+              ],
+              "gif_name": "gifs/incline_bench_press.gif"
+            },
+            {
+              "name": "Low-to-High Cable Flies",
+              "equipment": ["Cable crossover machine", "2 single-grip handles"],
+              "steps": [
+                "Set both pulleys to the lowest position, attach single-grip handles, and select the desired weight.",
+                "Grasp the handles with a slightly supinated (palms up) grip and step forward into a split stance.",
+                "Keeping a slight bend in your elbows, sweep the handles up and inward in an arc, moving only at the shoulders.",
+                "Squeeze your chest as the handles meet at chest height.",
+                "Slowly lower the handles back to the starting position under control."
+              ],
+              "gif_name": "gifs/low_to_high_flies.gif"
+            }
+          ]
+        },
+        {
+          "name": "Mid Chest",
+          "exercises": [
+            {
+              "name": "Barbell Bench Presses",
+              "equipment": ["Barbell", "Flat bench with rack", "Weight plates"],
+              "steps": [
+                "Lie on a flat bench with your hands just outside shoulder width, then pinch your shoulder blades together and drive them into the bench.",
+                "Take a deep breath and unrack the bar (with a spotter's help if needed), keeping your upper back tight as the weight settles.",
+                "Unlock your elbows and slowly lower the bar in a curved line until it touches your lower chest.",
+                "Press the bar back up in a curved line by driving yourself into the bench, pushing your feet into the floor, and extending your elbows."
+              ],
+              "gif_name": "gifs/flat_bench_press.gif"
+            },
+            {
+              "name": "Dumbbell Bench Presses",
+              "equipment": ["Dumbbells", "Flat bench"],
+              "steps": [
+                "Pick up the dumbbells with a neutral grip, rest the ends in your hip crease, and sit on the end of a flat bench.",
+                "Lie back while keeping the dumbbells close to your chest, take a deep breath, and press them to lockout.",
+                "Slowly lower the dumbbells under control until the handles are about level with your chest.",
+                "Contract your chest and press the dumbbells back up to the starting position."
+              ],
+              "gif_name": "gifs/flat_db_press.gif"
+            }
+          ]
+        },
+        {
+          "name": "Inner Chest",
+          "exercises": [
+            {
+              "name": "Hex Presses",
+              "equipment": ["Dumbbells", "Flat bench"],
+              "steps": [
+                "Sit on a flat bench with a dumbbell in each hand, lie back, and hold them above your chest with a neutral grip.",
+                "Press the dumbbells firmly together so they touch along their full length.",
+                "Keeping them squeezed together, slowly lower them until they lightly touch your mid-chest.",
+                "Press them back up to lockout while continuing to squeeze them together."
+              ],
+              "gif_name": "gifs/hex_press.gif"
+            },
+            {
+              "name": "Machine Flies (Pec Deck)",
+              "equipment": ["Chest Fly Machine"],
+              "steps": [
+                "Adjust the seat so the handles sit directly at mid-to-upper chest height.",
+                "Sit flat against the pad, pinch your shoulder blades back and down, and keep your chest puffed out.",
+                "Move your arms inward in a wide hugging arc, focusing on bringing your inner elbows and biceps together.",
+                "At the center, lock out your arms almost completely and aggressively squeeze your chest for 1 to 2 seconds to maximize tension."
+              ],
+              "gif_name": "gifs/chest_flies.gif"
+            }
+          ]
+        },
+        {
+          "name": "Lower Chest",
+          "exercises": [
+            {
+              "name": "Decline Bench Presses",
+              "equipment": ["Barbell", "Decline bench with rack", "Weight plates"],
+              "steps": [
+                "Lie on a decline bench, hook your feet under the pad, and set your hands just outside shoulder width.",
+                "Pinch your shoulder blades together and drive them into the bench.",
+                "Take a deep breath and unrack the bar (with a spotter's help if needed), keeping your upper back tight.",
+                "Unlock your elbows and slowly lower the bar in a straight line until it touches just below your sternum.",
+                "Press the bar back up in a straight line by driving yourself into the bench and extending your elbows."
+              ],
+              "gif_name": "gifs/decline_bench_press.gif"
+            },
+            {
+              "name": "Chest Dips",
+              "equipment": ["Dip station (parallel bars)"],
+              "steps": [
+                "Step up onto the dip station and grip the handles with a neutral grip, arms locked out.",
+                "Lean your torso slightly forward to keep the emphasis on your chest.",
+                "Unlock your elbows and slowly lower your body until your upper arms are roughly parallel with the floor.",
+                "Push through your palms to drive back up to the starting position."
+              ],
+              "gif_name": "gifs/chest_dips.gif"
+            },
+            {
+              "name": "High-to-Low Cable Flies",
+              "equipment": ["Cable crossover machine", "2 single-grip handles"],
+              "steps": [
+                "Set both pulleys to the highest position, attach single-grip handles, and select the desired weight.",
+                "Grasp the handles with a slightly pronated (palms down) grip and step forward into a split stance.",
+                "Bending your elbows up at a 90 degree angle and close to your torso, push the handles in front of you and slightly down.",
+                "Squeeze your chest as the handles meet below chest height.",
+                "Slowly release the handles back to the starting position under control."
+              ],
+              "gif_name": "gifs/high_to_low_flies.gif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Back",
+      "muscles": [
+        {
+          "name": "Lats",
+          "exercises": [
+            {
+              "name": "Lat Pulldowns",
+              "equipment": ["Lat pulldown machine", "Wide-grip bar"],
+              "steps": [
+                "Attach a wide-grip bar to the lat pulldown machine and sit down with your thighs secured under the pads.",
+                "Grasp the bar with a pronated (double overhand) grip.",
+                "Depress your shoulder blades, then pull the bar toward your upper chest by driving your elbows down.",
+                "Once your elbows are in line with your torso, slowly return the bar to the starting position under control."
+              ],
+              "gif_name": "gifs/lat_pulldowns.gif"
+            },
+            {
+              "name": "Wide Grip Pull-Ups",
+              "equipment": ["Pull-up bar"],
+              "steps": [
+                "Grasp the pull-up bar with a pronated grip, wider than shoulder width.",
+                "Take a deep breath, squeeze your glutes, and brace your abs.",
+                "Depress your shoulder blades, then drive your elbows down toward the floor to pull your chin up to the bar.",
+                "Once your lats are fully contracted, slowly lower yourself back to the starting position."
+              ],
+              "gif_name": "gifs/pull_ups.gif"
+            },
+            {
+              "name": "Straight Arm Lat Pulldowns",
+              "equipment": ["Cable machine", "Wide-grip bar"],
+              "steps": [
+                "Attach a wide-grip bar to a high cable pulley and stand facing the machine.",
+                "Grasp the bar with a pronated grip at roughly shoulder width and hinge slightly forward at the hips.",
+                "Keeping a slight bend in your elbows, depress your shoulder blades and pull the bar down in an arc toward your thighs.",
+                "Once your lats are fully contracted, slowly let the bar return to the starting position under control."
+              ],
+              "gif_name": "gifs/standing_pullovers.gif"
+            }
+          ]
+        },
+        {
+          "name": "Upper Back / Rhomboids",
+          "exercises": [
+            {
+              "name": "Bent Over Rows",
+              "equipment": ["Barbell", "Weight plates"],
+              "steps": [
+                "Stand holding a barbell with a double overhand grip.",
+                "Hinge forward at the hips until your torso is roughly parallel with the floor (or slightly above), keeping your spine neutral.",
+                "Drive your elbows behind your body and retract your shoulder blades, pulling the bar toward your belly button.",
+                "Once the bar touches your body, slowly lower it back to the starting position under control."
+              ],
+              "gif_name": "gifs/bent_over_rows.gif"
+            },
+            {
+              "name": "Seated Cable Rows",
+              "equipment": ["Seated cable row machine", "V-bar or close-grip handle"],
+              "steps": [
+                "Attach a V-bar to the seated row machine, select the weight, and sit with your feet on the platform.",
+                "Grasp the handle with a neutral grip and, with your knees slightly bent, sit upright with your back straight and shoulders back.",
+                "Keeping your torso still, pull the handle into your stomach.",
+                "Squeeze your shoulder blades together, pause, then slowly return the weight to the starting position."
+              ],
+              "gif_name": "gifs/cable_rows.gif"
+            },
+            {
+              "name": "Machine T-Bar Rows",
+              "equipment": ["Chest-supported T-bar row machine", "Weight plates"],
+              "steps": [
+                "Lie face down on the pad of the T-bar machine and grasp the handles with a neutral or pronated grip.",
+                "Drive your elbows behind your body while retracting your shoulder blades.",
+                "Pull until your elbows reach (or just pass) your torso.",
+                "Slowly lower the weight back to the starting position under control."
+              ],
+              "gif_name": "gifs/t_bar_rows.gif"
+            }
+          ]
+        },
+        {
+          "name": "Lower Back / Erectors",
+          "exercises": [
+            {
+              "name": "Back Hyper Extensions",
+              "equipment": ["45-degree back extension bench (Roman chair)", "Weight plate (optional)"],
+              "steps": [
+                "Adjust the pad of the back extension bench so it sits just below your hip crease, then hook your ankles under the foot pads.",
+                "Cross your arms over your chest (or hold a weight plate for extra resistance) and keep your spine neutral.",
+                "Hinge at the hips and slowly lower your torso toward the floor until you feel a stretch in your hamstrings.",
+                "Contract your lower back and glutes to raise your torso until your body forms a straight line with your legs."
+              ],
+              "gif_name": "gifs/hyperextensions.gif"
+            }
+          ]
+        },
+        {
+          "name": "Traps",
+          "exercises": [
+            {
+              "name": "Barbell Upright Rows",
+              "equipment": ["Barbell or EZ bar", "Weight plates"],
+              "steps": [
+                "Stand with your feet shoulder-width apart and hold a barbell in front of your thighs with a shoulder-width, overhand grip.",
+                "Stand tall with your chest up and shoulders back.",
+                "Leading with your elbows, lift the bar straight up along your body to about chest level, keeping your elbows higher than your wrists.",
+                "Slowly lower the bar back to the starting position under control."
+              ],
+              "gif_name": "gifs/upright_rows.gif"
+            },
+            {
+              "name": "Dumbbell Shrugs",
+              "equipment": ["Dumbbells"],
+              "steps": [
+                "Stand with a dumbbell on each side of your body, hinge down, and grab them with a neutral grip.",
+                "Stand up tall with your spine neutral and your arms hanging at your sides.",
+                "Contract your traps to raise your shoulders straight up toward your ears, squeezing hard at the top.",
+                "Slowly lower the dumbbells back to the starting position."
+              ],
+              "gif_name": "gifs/db_shrugs.gif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arms",
+      "muscles": [
+        {
+          "name": "Biceps",
+          "exercises": [
+            {
+              "name": "EZ Bar Preacher Curls",
+              "equipment": ["EZ bar or barbell", "Preacher bench"],
+              "steps": [
+                "Set the seat so that when you sit down, the top of the angled pad fits snugly right into your armpits.",
+                "Place the back of your upper arms flat against the pad, keeping your elbows fully supported and aligned with your shoulders.",
+                "Grip an EZ-bar on the inner angled grooves using an underhand grip (palms up), keeping your wrists straight and rigid.",
+                "Pull the weight upward toward your shoulders by flexing your elbows, keeping your back flat and your upper arms pressed into the pad.",
+                "Slowly lower the bar back down until your arms are almost fully extended, maintaining constant tension on your biceps."
+              ],
+              "gif_name": "gifs/preacher_curls.gif"
+            },
+            {
+              "name": "Standing Barbell Curls",
+              "equipment": ["Barbell or EZ bar", "Weight plates"],
+              "steps": [
+                "Grasp a barbell or EZ bar with an underhand grip and stand with your feet about shoulder-width apart.",
+                "Keeping your elbows at your sides, curl the weight up as far as possible.",
+                "Squeeze your biceps at the top, then slowly lower the weight back to the starting position."
+              ],
+              "gif_name": "gifs/ez_bar_curls.gif"
+            }
+          ]
+        },
+        {
+          "name": "Triceps",
+          "exercises": [
+            {
+              "name": "EZ Bar Skullcrushers",
+              "equipment": ["EZ bar", "Flat bench", "Weight plates"],
+              "steps": [
+                "Sit on the edge of a flat bench holding an EZ bar, then lie back while keeping the bar close to your chest.",
+                "Press the bar to lockout above your chest.",
+                "Unlock your elbows and lower the bar toward your forehead (or just above it), keeping your upper arms still.",
+                "Once your forearms reach parallel or just below, extend your elbows and flex your triceps to press back to lockout."
+              ],
+              "gif_name": "gifs/skullcrushers.gif"
+            },
+            {
+              "name": "Cable Tricep Pushdowns",
+              "equipment": ["Cable tower", "EZ bar attachment"],
+              "steps": [
+                "Clip the EZ-bar attachment to the top pulley of the cable machine.",
+                "Grab the outer, downward-sloping angles of the EZ-bar with palms facing down.",
+                "Face the tower, step back, and hinge forward slightly at the hips. Tuck your elbows tight against your ribs, and pull your shoulder blades down and back.",
+                "Keep your upper arms locked, press the bar down towards your thighs by extending your elbows, fully locking out your arms and squeeze your triceps.",
+                "Slowly allow the bar to rise back up until your forearms are just past parallel to the floor, stopping before your elbows drift forward or the weight stack touches."
+              ],
+              "gif_name": "gifs/tricep_pushdowns.gif"
+            }
+          ]
+        },
+        {
+          "name": "Forearms",
+          "exercises": [
+            {
+              "name": "Seated Barbell Wrist Curls",
+              "equipment": ["Barbell", "Flat bench", "Weight plates"],
+              "steps": [
+                "Load the bar and sit on a bench with your forearms resting on your thighs and your wrists just past your knees.",
+                "Hold the bar with a supinated (palms up) grip.",
+                "Using only your wrists, curl the bar up toward your body.",
+                "Once your forearm flexors are fully contracted, slowly lower the weight back to the starting position."
+              ],
+              "gif_name": "gifs/wrist_curls.gif"
+            },
+            {
+              "name": "Reverse Cable Curls",
+              "equipment": ["Cable tower", "EZ bar attachment"],
+              "steps": [
+                "Clip the EZ bar attachment to the bottom pulley of the cable machine and select the desired weight.",
+                "Grab the bar with a pronated (palms down) grip, hands about shoulder-width apart, and stand tall facing the tower with your arms straight.",
+                "Keeping your elbows tucked at your sides, curl the bar up toward yourself until your forearms are close to your upper arms.",
+                "Slowly lower the bar back to the starting position under control."
+              ],
+              "gif_name": "gifs/cable_reverse_curls.gif"
+            },
+            {
+              "name": "Cable Forearm Curls",
+              "equipment": ["Cable tower", "Straight bar attachment"],
+              "steps": [
+                "Clip the straight bar attachment to the top pulley of the cable machine.",
+                "Grab the bar with palms facing down, keeping the bar in front of your head, with your biceps pressed against your forearms.",
+                "Face the tower, step back, and hinge slightly at the hips. Keep your elbows tucked to your sides and shoulders relaxed.",
+                "Curl just your hands toward the floor, driving your knuckles straight down. Squeeze hard at the bottom.",
+                "Control the weight on the way up."
+              ],
+              "gif_name": "gifs/cable_wrist_curls.gif"
+            }
+          ]
+        },
+        {
+          "name": "Brachialis",
+          "exercises": [
+            {
+              "name": "Hammer Curls",
+              "equipment": ["Dumbbells"],
+              "steps": [
+                "Stand tall holding a dumbbell in each hand at your sides with a neutral (palms facing in) grip.",
+                "Keeping your elbows tucked at your sides, curl both dumbbells up at the same time toward your shoulders.",
+                "Squeeze at the top without letting your elbows drift forward.",
+                "Slowly lower both dumbbells back to the starting position."
+              ],
+              "gif_name": "gifs/hammer_curls.gif"
+            },
+            {
+              "name": "Cross-Body Curls",
+              "equipment": ["Dumbbells"],
+              "steps": [
+                "Stand tall holding a dumbbell in each hand at your sides with a neutral (palms facing in) grip.",
+                "Keeping your upper arm still, curl one dumbbell up and across your body toward the opposite shoulder.",
+                "Squeeze at the top, then slowly lower the dumbbell back to your side.",
+                "Alternate arms with each repetition."
+              ],
+              "gif_name": "gifs/cross_body_curls.gif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Shoulders",
+      "muscles": [
+        {
+          "name": "Front Delts",
+          "exercises": [
+            {
+              "name": "Overhead Barbell Presses",
+              "equipment": ["Barbell", "Squat rack", "Weight plates"],
+              "steps": [
+                "Set the barbell in a rack just below shoulder height and load the desired weight.",
+                "Grip the bar with a pronated grip at (or just outside) shoulder width, step under it, and unrack it with a neutral spine.",
+                "Take two steps back, set a shoulder-width stance, inhale, and brace your core.",
+                "Tuck your chin and press the bar to lockout overhead, exhaling at the top.",
+                "Slowly lower the bar under control back to your upper chest."
+              ],
+              "gif_name": "gifs/military_press.gif"
+            },
+            {
+              "name": "Seated Dumbbell Presses",
+              "equipment": ["Dumbbells", "Adjustable bench"],
+              "steps": [
+                "Set an adjustable bench to 90 degrees, pick up the dumbbells, and sit with the ends resting on your knees.",
+                "Kick your knees up one at a time to bring each dumbbell to shoulder height, then rotate your palms to face forward.",
+                "Take a deep breath and press the dumbbells overhead by extending your elbows.",
+                "Slowly lower the dumbbells until your elbows are at roughly 90 degrees (or slightly lower)."
+              ],
+              "gif_name": "gifs/db_overhead_press.gif"
+            }
+          ]
+        },
+        {
+          "name": "Rear Delts",
+          "exercises": [
+            {
+              "name": "Cable Rear Delt Flies",
+              "equipment": ["Cable crossover machine"],
+              "steps": [
+                "Position dual cable pulleys at shoulder height, standing in the center.",
+                "Hold the left cable with your right hand and the right cable with your left hand.",
+                "Step back to create tension, keep a slight bend in your elbows, and engage your core.",
+                "Pull your arms out and back in a wide arc at shoulder level, leading with your elbows.",
+                "Squeeze your rear delts at the peak, then slowly return to the start."
+              ],
+              "gif_name": "gifs/rear_delt_flies.gif"
+            },
+            {
+              "name": "Cable Face Pulls",
+              "equipment": ["Cable machine", "2x D-handle attachments"],
+              "steps": [
+                "Attach both handles to a cable pulley set at about face height.",
+                "Grasp both with your palms facing each other and step back into a split stance with your arms straight out in front of you.",
+                "Inhale and pull the handles toward your face, pulling your elbows behind your head.",
+                "Slowly return the weight to the starting position under control."
+              ],
+              "gif_name": "gifs/face_pulls.gif"
+            }
+          ]
+        },
+        {
+          "name": "Side Delts",
+          "exercises": [
+            {
+              "name": "Dumbbell Lateral Raises",
+              "equipment": ["Dumbbells"],
+              "steps": [
+                "Select your dumbbells and step into an open area, holding them at your sides with a neutral grip.",
+                "Keeping a slight bend in your elbows, take a deep breath and raise the dumbbells out to the sides up to shoulder height.",
+                "Slowly lower the dumbbells back to the starting position under control."
+              ],
+              "gif_name": "gifs/db_lateral_raises.gif"
+            },
+            {
+              "name": "Cable Lateral Raises",
+              "equipment": ["Cable machine", "Single-grip handle"],
+              "steps": [
+                "Set a pulley to the lowest position, attach a single-grip handle, and stand side-on to the machine.",
+                "Grab the handle with your far hand so the cable runs across the front of your body.",
+                "Keeping a slight bend in your elbow, raise your arm out to the side until it reaches shoulder height.",
+                "Slowly lower the handle back to the starting position, then switch sides once you finish the set."
+              ],
+              "gif_name": "gifs/lateral_cable_raises.gif"
+            }
+          ]
+        },
+        {
+          "name": "Rotator Cuff",
+          "exercises": [
+            {
+              "name": "Wall Ball Rolls",
+              "equipment": ["Small ball (stability, tennis, or soft medicine ball)", "Wall"],
+              "steps": [
+                "Stand facing a wall and press a small ball against it with one hand at about shoulder height.",
+                "Keep your arm straight and apply light pressure to hold the ball in place.",
+                "Roll the ball in small, controlled circles, moving from your shoulder.",
+                "Perform circles in both directions, then switch arms."
+              ],
+              "gif_name": "gifs/wall_ball_rolls.gif"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Legs",
+      "muscles": [
+        {
+          "name": "Quads",
+          "exercises": [
+            {
+              "name": "Barbell Back Squats",
+              "equipment": ["Barbell", "Squat rack", "Weight plates"],
+              "steps": [
+                "Set the barbell in a rack just below shoulder height and load the desired weight.",
+                "Step under the bar and rest it across the muscles of your upper back (not your neck), gripping it wide for stability.",
+                "Brace your core, stand up to unrack the bar, and take a small step back with your feet about shoulder-width apart.",
+                "Keeping your eyes forward and chest up, sit your hips back and down until your thighs are parallel with the floor.",
+                "Drive through your heels to stand back up without forcefully locking out your knees."
+              ],
+              "gif_name": "gifs/back_squat.gif"
+            },
+            {
+              "name": "Leg Presses",
+              "equipment": ["Leg press machine", "Weight plates"],
+              "steps": [
+                "Load the machine, sit down, and place your feet on the platform in a shoulder-width stance.",
+                "Take a deep breath, extend your legs, and release the safeties.",
+                "Lower the weight under control until your knees are bent to about 90 degrees or slightly below.",
+                "Drive the platform back up by extending your knees without forcefully locking them out.",
+                "Re-engage the safeties when your set is finished."
+              ],
+              "gif_name": "gifs/leg_press.gif"
+            },
+            {
+              "name": "Leg Extensions",
+              "equipment": ["Leg extension machine"],
+              "steps": [
+                "Select the weight and adjust the seat so your knees line up with the machine's pivot point.",
+                "Sit down and position your shins behind the lower pad.",
+                "Take a deep breath and extend your legs, flexing your quads and exhaling as your knees straighten.",
+                "Slowly lower your feet back to the starting position."
+              ],
+              "gif_name": "gifs/leg_extensions.gif"
+            },
+            {
+              "name": "Bulgarian Split Squats",
+              "equipment": ["Dumbbells", "Flat bench"],
+              "steps": [
+                "Hold dumbbells at your sides with a neutral grip and stand about a stride in front of a bench.",
+                "Place the top of your back foot on the bench behind you.",
+                "Bend your front knee and lower yourself until your back knee almost touches the ground beneath your hip.",
+                "Drive through your front foot to return to the starting position, then switch legs after the set."
+              ],
+              "gif_name": "gifs/bulgarian_split_squats.gif"
+            }
+          ]
+        },
+        {
+          "name": "Glutes",
+          "exercises": [
+            {
+              "name": "Barbell Hip Thrusts",
+              "equipment": ["Barbell", "Flat bench", "Weight plates", "Bar pad (optional)"],
+              "steps": [
+                "Sit on the floor with your upper back against a bench and roll a barbell over your legs to your hip crease (a bar pad adds comfort).",
+                "Plant your feet flat on the floor about hip-width apart with your knees bent.",
+                "Drive through your feet and squeeze your glutes to lift your hips until your torso is parallel with the floor.",
+                "Slowly lower your hips back to the starting position."
+              ],
+              "gif_name": "gifs/hip_thrusts.gif"
+            },
+            {
+              "name": "Cable Kickbacks",
+              "equipment": ["Cable tower", "Ankle wrap attachment"],
+              "steps": [
+                "Set the pulley at the bottom and attach your ankle wrap to it.",
+                "Step back with the attached leg and cross your free leg over the cable.",
+                "Pull the attached leg back at a 45 degree angle without bending your knees until it's parallel to the ground.",
+                "Slowly lower your leg down while keeping it straight and return to starting position."
+              ],
+              "gif_name": "gifs/cable_kickbacks.gif"
+            },
+            {
+              "name": "Romanian Deadlifts",
+              "equipment": ["Barbell", "Squat rack", "Weight plates"],
+              "steps": [
+                "Position the bar over the top of your shoelaces and assume a hip width stance.",
+                "Assume a double overhand grip just outside of hip width and deadlift the weight into position at the top with the hips and knees locked out.",
+                "Begin the RDL by pushing your hips back and hinging forward until the bar is just below knee height.",
+                "Return to the starting position by driving through the whole foot and focus on pushing the floor away."
+              ],
+              "gif_name": "gifs/RDLs.gif"
+            }
+          ]
+        },
+        {
+          "name": "Hamstrings",
+          "exercises": [
+            {
+              "name": "Stiff Leg Deadlifts",
+              "equipment": ["Barbell", "Weight plates"],
+              "steps": [
+                "Stand with your feet hip-width apart and the bar over your shoelaces.",
+                "Hinge at the hips with only a slight knee bend and grasp the bar with a shoulder-width, double overhand grip.",
+                "With a neutral spine, drive through your whole foot and extend your hips to stand up, keeping the bar close to your legs.",
+                "Push your hips back and hinge forward, keeping your legs nearly straight, to lower the bar back to the floor.",
+                "Reset your position before the next rep."
+              ],
+              "gif_name": "gifs/SLDLs.gif"
+            },
+            {
+              "name": "Seated Leg Curls",
+              "equipment": ["Seated leg curl machine"],
+              "steps": [
+                "Select the weight and adjust the pad so it rests just above the back of your heels.",
+                "Tense your hamstrings to lift the weight slightly off the stack.",
+                "Take a deep breath and curl the pad down and back as far as possible, keeping your spine neutral.",
+                "Slowly return the weight to the starting position."
+              ],
+              "gif_name": "gifs/seated_leg_curls.gif"
+            },
+            {
+              "name": "Lying Leg Curls",
+              "equipment": ["Lying leg curl machine"],
+              "steps": [
+                "Select the weight and adjust the pad so it rests just above the back of your heels.",
+                "Tense your hamstrings to lift the weight slightly off the stack.",
+                "Take a deep breath and curl the pad up and toward your back as far as possible, keeping your spine neutral.",
+                "Slowly return the weight to the starting position."
+              ],
+              "gif_name": "gifs/lying_leg_curls.gif"
+            }
+          ]
+        },
+        {
+          "name": "Calves",
+          "exercises": [
+            {
+              "name": "Standing Calf Raises",
+              "equipment": ["Standing calf raise machine"],
+              "steps": [
+                "Adjust the shoulder pads to your height and step underneath them.",
+                "Place the balls of your feet on the platform with your toes pointed forward and your heels hanging off.",
+                "Stand up tall to lift the weight, then lower your heels until your calves are fully stretched.",
+                "Push through the balls of your feet to raise your heels as high as possible, exhaling as you flex your calves."
+              ],
+              "gif_name": "gifs/calf_raises.gif"
+            },
+            {
+              "name": "Seated Calf Raises",
+              "equipment": ["Seated calf raise machine"],
+              "steps": [
+                "Sit down and adjust the knee pads to rest on your quads, your heels will naturally hang off.",
+                "Extend your ankles and release the safety bar.",
+                "Lower the heels by dorsiflexing the ankles until the calves are fully stretched.",
+                "Extend the ankles and exhale as you flex the calves."
+              ],
+              "gif_name": "gifs/seated_calf_raises.gif"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

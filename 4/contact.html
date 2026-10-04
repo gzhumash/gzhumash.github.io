@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dani Zhumasheva">
+    <meta name="description" content="Sign up for personalized training based on your goals, experience, and schedule.">
+    <title>Personalized Training | Muscle Map</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/img/favicon.png" alt="">
+                Muscle <span>Map</span>
+            </a>
+            <button type="button" class="btn-login">Log In</button>
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="fundamentals.html">Fundamentals</a></li>
+                    <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-header">
+            <div class="container">
+                <h1>Personalized Training</h1>
+                <p>Want a plan built around your goals, schedule, and experience? Fill out the form below to sign up for personalized training with me.</p>
+            </div>
+        </div>
+
+        <div class="container contact-layout">
+            <form class="intake">
+                <fieldset>
+                    <legend>About You</legend>
+                    <div class="form-two-col">
+                        <div class="form-row">
+                            <label for="first-name">First name</label>
+                            <input type="text" id="first-name" name="first-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone (optional)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Training</legend>
+                    <div class="form-two-col">
+                        <div class="form-row">
+                            <label for="experience">Experience level</label>
+                            <select id="experience" name="experience">
+                                <option value="">Select one</option>
+                                <option value="beginner">Beginner (less than 1 year)</option>
+                                <option value="intermediate">Intermediate (1 to 3 years)</option>
+                                <option value="advanced">Advanced (3+ years)</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label for="days">Days per week you can train</label>
+                            <select id="days" name="days">
+                                <option value="">Select one</option>
+                                <option value="2">2 days</option>
+                                <option value="3">3 days</option>
+                                <option value="4">4 days</option>
+                                <option value="5">5 days</option>
+                                <option value="6">6 days</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <fieldset>
+                        <legend>Primary goal</legend>
+                        <ul class="option-list two-col">
+                            <li><label><input type="radio" name="goal" value="muscle"> Build muscle</label></li>
+                            <li><label><input type="radio" name="goal" value="strength"> Get stronger</label></li>
+                            <li><label><input type="radio" name="goal" value="fat-loss"> Lose fat</label></li>
+                            <li><label><input type="radio" name="goal" value="general"> General fitness</label></li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Focus areas</legend>
+                        <ul class="option-list two-col">
+                            <li><label><input type="checkbox" name="focus" value="chest"> Chest</label></li>
+                            <li><label><input type="checkbox" name="focus" value="back"> Back</label></li>
+                            <li><label><input type="checkbox" name="focus" value="arms"> Arms</label></li>
+                            <li><label><input type="checkbox" name="focus" value="shoulders"> Shoulders</label></li>
+                            <li><label><input type="checkbox" name="focus" value="legs"> Legs</label></li>
+                            <li><label><input type="checkbox" name="focus" value="full-body"> Full body</label></li>
+                        </ul>
+                    </fieldset>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Anything Else?</legend>
+                    <div class="form-row">
+                        <label for="message">Tell me about your current routine, injuries, or anything I should know</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="button" class="btn btn-primary">Sign Me Up</button>
+            </form>
+
+            <aside class="contact-aside card" aria-labelledby="get-title">
+                <h2 id="get-title">What You Get</h2>
+                <ul>
+                    <li>A training plan built around your goal and schedule</li>
+                    <li>Exercises for the muscles you want to focus on</li>
+                    <li>A plan for progressing your sets, reps, and weight</li>
+                    <li>Form feedback and check-ins</li>
+                </ul>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Muscle <span>Map</span></p>
+                    <p>A simple guide to what exercise targets what muscle.</p>
+                </div>
+                <nav aria-label="Footer">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="exercises.html">Find Your Exercises</a></li>
+                        <li><a href="fundamentals.html">Training Fundamentals</a></li>
+                        <li><a href="contact.html">Personalized Training</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Credits</h2>
+                    <ul>
+                        <li>Anatomy diagram: <cite>Magnific</cite></li>
+                        <li>Exercise instructions adapted from <cite><a href="https://www.muscleandstrength.com/exercises">Muscle &amp; Strength</a></cite></li>
+                        <li>Progressive overload info: <cite><a href="https://www.nasm.org/resource-center/blog/training/progressive-overload-explained-programming-progress-for-every-client">NASM</a></cite></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Dani Zhumasheva for CSCI 3054</p>
+        </div>
+    </footer>
+</body>
+</html>
