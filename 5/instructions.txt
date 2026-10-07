@@ -1,0 +1,32 @@
+Use the provided activity4_content files/folders (img - with 2 images, css - with
+the css file, js - with the json file, and index.html). DO NOT make changes to the
+provided files other than creating and linking an external JS file to this html file.
+
+Your JavaScript file will need to have functions to read the data from the JSON file and
+other(s) to change the image and text of the html from information about alpine skiing
+to the alpine snowboarding image and information in the JSON file.
+- To do this you will need to fetch0 the data from the file.
+- As well as DOM manipulation techniques to change the html content (you
+shouldn't change any elements, just the text of the elements).
+- The image is a background, but it's url is assigned to a variable in the CSS
+file, that you'll have to change using the .style.setProperty functions.
+In your GitHub repository, create a new subsection/folder named 5 (or whatever
+style you have been using) in your GitHub repository (see project 1 instructions or
+me if you didn't complete project 1) with a sub folder for your CSS and another
+subfolder for the img, css, and js folders. You can create a simple temp file for a
+subfolder until you add the code or image. Add the index.html and other files to
+their folders.
+
+GitHub landing page
+You need to change the main landing page index.html in you GitHub repository,
+to now include a link to this new activity 4 index.html.
+Edit the original index.html (the main one from activity 1) at the root directory
+and change the code to have your div, card, or etc. with an anchor with an href to the
+newly created 5 directory and some text stating Activity 4 (and other info if you want).
+DO NOT remove any of previous work (project 1, 2 etc.).
+Commit the changes and after waiting few minutes while the changes process
+you should be able to go to your io page and be able to click on the new link to go to
+the Activity 4 page.
+You may need to go back into your Activity 4 code to adjust the relative paths
+to the files.
+
