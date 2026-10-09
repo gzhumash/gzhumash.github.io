@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dani Zhumasheva">
+    <meta name="description" content="Choose a muscle group (chest, back, arms, shoulders, or legs) to find exercises for it.">
+    <meta name="keywords" content="gym exercises, muscle groups, strength training, workout, exercise form, gym equipment, progressive overload, personal training">
+    <title>Find Your Exercises | Muscle Map</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Muscle Map">
+    <meta property="og:title" content="Find Your Exercises | Muscle Map">
+    <meta property="og:description" content="Pick a muscle. Get the exercises.">
+    <meta property="og:image" content="https://gzhumash.github.io/6/assets/img/logo-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="Muscle Map logo, a cream dumbbell on a red square">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://gzhumash.github.io/6/assets/img/logo-share.png">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="js/exercises.js" defer></script>
+
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/img/favicon.png" alt="">
+                Muscle <span>Map</span>
+            </a>
+            <button type="button" class="btn-login">Log In</button>
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exercises.html" class="active" aria-current="page">Exercises</a></li>
+                    <li><a href="fundamentals.html">Fundamentals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="page-header">
+            <div class="container">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Home</a></li>
+                    <li aria-current="page">Exercises</li>
+                </ol>
+            </nav>
+                <h1 id="page-title">Choose a Muscle Group</h1>
+                <p id="page-intro">Pick the area of the body you want to train. Next, you will narrow it down to one specific muscle.</p>
+            </div>
+        </div>
+
+        <div class="container explorer">
+            <p id="map-prompt" class="map-prompt">Hover over a region of the body to see its name, then click to select it. On a touch screen, tap a colored region. Using a keyboard? Press Tab to move between regions and Enter to select.</p>
+            <p id="status" class="status" role="status"></p>
+            <div class="map-actions">
+                <button type="button" id="retry-button" class="btn btn-primary retry-button">Try Again</button>
+            </div>
+
+            <figure class="anatomy">
+                <svg id="body-map" class="body-map is-loading" viewBox="0 0 600 600" role="group" aria-labelledby="map-title">
+                    <title id="map-title">Muscle map: the body from the front on the left and from the back on the right</title>
+                    <defs>
+                        <clipPath id="spotlight-shape"></clipPath>
+                    </defs>
+                    <image id="map-base" href="assets/img/anatomy-enhanced.png" width="600" height="600"/>
+                    <image id="map-lit" href="assets/img/anatomy-enhanced.png" width="600" height="600" clip-path="url(#spotlight-shape)"/>
+
+                    <!-- STEP 1: the five muscle groups -->
+                    <g id="group-layer" class="region-layer">
+                        <g class="region group-region" data-group="chest" tabindex="0" role="button" aria-label="Chest">
+                            <polygon points="108,114 152,107 167,112 182,107 228,114 232,140 228,160 218,173 186,176 167,178 148,176 118,173 108,160 104,140"/>
+                        </g>
+                        <g class="region group-region" data-group="back" tabindex="0" role="button" aria-label="Back">
+                            <polygon points="375,116 432,112 492,116 490,165 492,205 478,245 458,262 432,268 406,262 388,245 375,205 376,165"/>
+                        </g>
+                        <g class="region group-region" data-group="arms" tabindex="0" role="button" aria-label="Arms">
+                            <polygon points="84,170 106,166 110,195 102,220 88,255 62,292 38,290 48,250 66,215 72,185"/>
+                            <polygon points="230,166 250,170 262,185 270,215 280,250 290,292 268,294 255,255 237,220 226,195"/>
+                            <polygon points="346,165 368,160 378,180 372,215 358,255 338,296 316,294 322,250 332,215 340,185"/>
+                            <polygon points="498,160 520,165 528,185 532,215 548,250 568,296 545,298 522,256 500,215 490,180"/>
+                        </g>
+                        <g class="region group-region" data-group="shoulders" tabindex="0" role="button" aria-label="Shoulders">
+                            <polygon points="80,130 92,104 130,98 167,104 204,98 242,104 255,130 252,172 232,168 228,114 167,110 108,114 104,168 84,172"/>
+                            <polygon points="343,135 356,105 395,100 432,104 470,100 508,105 522,135 520,165 498,160 492,116 432,112 375,116 368,160 346,165"/>
+                        </g>
+                        <g class="region group-region" data-group="legs" tabindex="0" role="button" aria-label="Legs">
+                            <polygon points="104,258 167,262 232,258 234,330 222,410 228,450 224,545 184,545 178,450 172,330 167,305 162,330 156,450 150,545 110,545 108,450 114,410 102,330"/>
+                            <polygon points="380,256 432,262 486,256 498,300 496,400 495,485 484,545 450,545 440,485 438,400 432,335 426,400 426,485 416,545 384,545 376,485 376,400 374,300"/>
+                        </g>
+                    </g>
+
+                    <!-- STEP 2: chest muscles (hidden until Chest is chosen) -->
+                    <g class="region-layer muscle-layer is-hidden" data-group="chest">
+                        <g class="region muscle-region" data-muscle="upper-chest" tabindex="0" role="button" aria-pressed="false" aria-label="Upper Chest">
+                            <polygon points="108,114 152,107 152,132 106,138"/>
+                            <polygon points="182,107 228,114 230,138 182,132"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="mid-chest" tabindex="0" role="button" aria-pressed="false" aria-label="Mid Chest">
+                            <polygon points="106,138 152,132 152,154 108,160"/>
+                            <polygon points="182,132 230,138 228,160 182,154"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="inner-chest" tabindex="0" role="button" aria-pressed="false" aria-label="Inner Chest">
+                            <polygon points="152,107 167,112 182,107 182,174 167,178 152,174"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="lower-chest" tabindex="0" role="button" aria-pressed="false" aria-label="Lower Chest">
+                            <polygon points="108,160 152,154 152,174 118,173"/>
+                            <polygon points="182,154 228,160 218,173 182,174"/>
+                        </g>
+                    </g>
+
+                    <!-- STEP 2: back muscles (hidden until Back is chosen) -->
+                    <g class="region-layer muscle-layer is-hidden" data-group="back">
+                        <g class="region muscle-region" data-muscle="lats" tabindex="0" role="button" aria-pressed="false" aria-label="Lats">
+                            <polygon points="378,160 392,175 420,180 422,190 416,232 400,248 388,245 378,205"/>
+                            <polygon points="486,160 472,175 444,180 442,190 448,232 464,248 476,245 486,205"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="upper-back" tabindex="0" role="button" aria-pressed="false" aria-label="Upper Back / Rhomboids">
+                            <polygon points="376,118 412,124 420,180 392,175 378,160"/>
+                            <polygon points="488,118 452,124 444,180 472,175 486,160"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="lower-back" tabindex="0" role="button" aria-pressed="false" aria-label="Lower Back / Erectors">
+                            <polygon points="422,190 432,215 442,190 448,232 454,262 432,268 410,262 416,232"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="traps" tabindex="0" role="button" aria-pressed="false" aria-label="Traps">
+                            <polygon points="412,72 432,62 452,72 470,98 494,106 452,124 442,190 432,215 422,190 412,124 370,106 394,98"/>
+                        </g>
+                    </g>
+
+                    <!-- STEP 2: arm muscles (hidden until Arms is chosen) -->
+                    <g class="region-layer muscle-layer is-hidden" data-group="arms">
+                        <g class="region muscle-region" data-muscle="biceps" tabindex="0" role="button" aria-pressed="false" aria-label="Biceps">
+                            <polygon points="230,160 248,160 262,178 266,200 252,208 238,198 228,178"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="triceps" tabindex="0" role="button" aria-pressed="false" aria-label="Triceps">
+                            <polygon points="346,163 370,158 380,178 374,212 364,226 336,222 336,195"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="forearms" tabindex="0" role="button" aria-pressed="false" aria-label="Forearms">
+                            <polygon points="238,198 252,208 260,226 278,220 284,252 292,292 270,295 256,258 242,228"/>
+                            <polygon points="336,222 364,226 362,250 340,296 316,294 322,252"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="brachialis" tabindex="0" role="button" aria-pressed="false" aria-label="Brachialis">
+                            <polygon points="262,178 272,192 278,220 260,226 252,208 266,200"/>
+                        </g>
+                    </g>
+
+                    <!-- STEP 2: shoulder muscles (hidden until Shoulders is chosen) -->
+                    <g class="region-layer muscle-layer is-hidden" data-group="shoulders">
+                        <g class="region muscle-region" data-muscle="front-delts" tabindex="0" role="button" aria-pressed="false" aria-label="Front Delts">
+                            <polygon points="222,104 240,108 246,140 240,168 230,165 226,140 220,118"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="rear-delts" tabindex="0" role="button" aria-pressed="false" aria-label="Rear Delts">
+                            <polygon points="364,103 384,110 386,135 382,160 356,160 362,135"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="side-delts" tabindex="0" role="button" aria-pressed="false" aria-label="Side Delts">
+                            <polygon points="240,108 252,112 262,135 258,172 240,168 246,140"/>
+                            <polygon points="350,112 364,103 362,135 356,160 345,155 343,130"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="rotator-cuff" tabindex="0" role="button" aria-pressed="false" aria-label="Rotator Cuff">
+                            <polygon points="384,110 410,122 414,148 406,168 382,160 386,135"/>
+                        </g>
+                    </g>
+
+                    <!-- STEP 2: leg muscles (hidden until Legs is chosen) -->
+                    <g class="region-layer muscle-layer is-hidden" data-group="legs">
+                        <g class="region muscle-region" data-muscle="quads" tabindex="0" role="button" aria-pressed="false" aria-label="Quads">
+                            <polygon points="106,262 138,262 160,305 156,400 118,405 104,330"/>
+                            <polygon points="228,262 196,262 174,305 178,400 216,405 230,330"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="glutes" tabindex="0" role="button" aria-pressed="false" aria-label="Glutes">
+                            <polygon points="382,258 432,262 484,258 496,300 488,332 432,332 378,332 372,300"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="hamstrings" tabindex="0" role="button" aria-pressed="false" aria-label="Hamstrings">
+                            <polygon points="378,332 430,332 426,400 412,440 388,440 378,400"/>
+                            <polygon points="436,332 490,332 494,400 478,440 452,440 440,400"/>
+                        </g>
+                        <g class="region muscle-region" data-muscle="calves" tabindex="0" role="button" aria-pressed="false" aria-label="Calves">
+                            <polygon points="380,440 426,440 430,485 418,520 394,520 378,485"/>
+                            <polygon points="440,440 492,440 495,485 482,520 456,520 440,485"/>
+                        </g>
+                    </g>
+
+                </svg>
+                <figcaption>Original image by Magnific. Enhanced by ChatGPT.</figcaption>
+            </figure>
+
+            <p id="region-name" class="region-name" aria-hidden="true"></p>
+            <div class="map-actions">
+                <button type="button" id="back-button" class="btn btn-light back-button">&larr; All Muscle Groups</button>
+            </div>
+
+            <section id="exercise-panel" class="exercise-panel" aria-labelledby="muscle-title">
+                <h2 id="muscle-title" tabindex="-1">Exercises</h2>
+                <p id="muscle-description"></p>
+                <div id="exercise-list" class="exercise-list"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Muscle <span>Map</span></p>
+                    <p>A simple guide to what exercise targets what muscle.</p>
+                </div>
+                <nav aria-label="Footer">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="exercises.html">Find Your Exercises</a></li>
+                        <li><a href="fundamentals.html">Training Fundamentals</a></li>
+                        <li><a href="contact.html">Personalized Training</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Credits</h2>
+                    <ul>
+                        <li>Anatomy diagram: <cite>Magnific</cite></li>
+                        <li>Tab Icon: <cite>AI-Generated (Claude)</cite></li>
+                        <li>Exercise instructions adapted from <cite><a href="https://www.muscleandstrength.com/exercises">Muscle &amp; Strength</a></cite></li>
+                        <li>Progressive overload info: <cite><a href="https://www.nasm.org/resource-center/blog/training/progressive-overload-explained-programming-progress-for-every-client">NASM</a></cite></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Dani Zhumasheva for CSCI 3054</p>
+        </div>
+    </footer>
+</body>
+</html>
