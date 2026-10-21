@@ -636,6 +636,12 @@ legend {
     font-weight: 500;
 }
 
+.form-note {
+    margin: 6px 0 0 0;
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
 input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select, textarea {
     width: 100%;
     padding: 10px 12px;
@@ -645,6 +651,11 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
     color: #FCFCFC;
     font-family: 'DM Mono', monospace;
     font-size: 0.9rem;
+}
+
+input[readonly] {
+    opacity: 0.7;
+    cursor: not-allowed;
 }
 
 textarea {

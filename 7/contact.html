@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/contact.js"></script>
 
 </head>
 <body>
@@ -54,25 +55,26 @@
         </div>
 
         <div class="container contact-layout">
-            <form class="intake">
+            <form class="intake" id="contact-form" novalidate>
                 <fieldset>
                     <legend>About You</legend>
                     <div class="form-two-col">
                         <div class="form-row">
-                            <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first-name">
+                            <label for="first-name">First name (reqiured)</label>
+                            <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
                         </div>
                         <div class="form-row">
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last-name">
+                            <input type="text" id="last-name" name="last-name" autocomplete="family-name">
                         </div>
                         <div class="form-row">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" readonly aria-describedby="email-note">
+                            <p id="email-note" class="form-note">This is the email on your account.</p>
                         </div>
                         <div class="form-row">
                             <label for="phone">Phone (optional)</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
                         </div>
                     </div>
                 </fieldset>
@@ -81,8 +83,8 @@
                     <legend>Your Training</legend>
                     <div class="form-two-col">
                         <div class="form-row">
-                            <label for="experience">Experience level</label>
-                            <select id="experience" name="experience">
+                            <label for="experience">Experience level (required)</label>
+                            <select id="experience" name="experience" required>
                                 <option value="">Select one</option>
                                 <option value="beginner">Beginner (less than 1 year)</option>
                                 <option value="intermediate">Intermediate (1 to 3 years)</option>
@@ -90,8 +92,8 @@
                             </select>
                         </div>
                         <div class="form-row">
-                            <label for="days">Days per week you can train</label>
-                            <select id="days" name="days">
+                            <label for="days">Days per week you can train (required)</label>
+                            <select id="days" name="days" required>
                                 <option value="">Select one</option>
                                 <option value="2">2 days</option>
                                 <option value="3">3 days</option>
@@ -103,9 +105,9 @@
                     </div>
 
                     <fieldset>
-                        <legend>Primary goal</legend>
+                        <legend>Primary goal (required)</legend>
                         <ul class="option-list two-col">
-                            <li><label><input type="radio" name="goal" value="muscle"> Build muscle</label></li>
+                            <li><label><input type="radio" name="goal" value="muscle" required> Build muscle</label></li>
                             <li><label><input type="radio" name="goal" value="strength"> Get stronger</label></li>
                             <li><label><input type="radio" name="goal" value="fat-loss"> Lose fat</label></li>
                             <li><label><input type="radio" name="goal" value="general"> General fitness</label></li>
@@ -132,8 +134,9 @@
                         <textarea id="message" name="message"></textarea>
                     </div>
                 </fieldset>
-
-                <button type="button" class="btn btn-primary">Sign Me Up</button>
+                
+                <p id="contact-message" class="form-message" role="alert"></p>
+                <button type="submit" class="btn btn-primary">Sign Me Up</button>
             </form>
 
             <aside class="contact-aside card" aria-labelledby="get-title">
