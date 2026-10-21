@@ -636,7 +636,7 @@ legend {
     font-weight: 500;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select, textarea {
     width: 100%;
     padding: 10px 12px;
     background-color: #0c0c00;
@@ -677,6 +677,47 @@ textarea {
 
 .contact-aside li {
     margin-bottom: 10px;
+}
+
+/* ---------------------- Auth ---------------------- */
+.auth-layout {
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.auth-switch {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.link-button {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #FCDE9C;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-message {
+    min-height: 1.4em;
+    margin: 0 0 16px 0;
+    font-size: 0.85rem;
+}
+
+.form-message.is-error {
+    color: #ff8a80;
+}
+
+.form-message.is-success {
+    color: #a5d6a7;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
 }
 
 /* ---------------------- Footer ---------------------- */

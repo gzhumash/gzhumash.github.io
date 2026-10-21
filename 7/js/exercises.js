@@ -1,6 +1,8 @@
-/* --------------------- CONSTANTS --------------------- */
+import { auth, db } from './firebase.js';
+import { onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-auth.js';
+import { collection, getDocs, query, orderBy } from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
 
-const DATA_URL = 'assets/exercises.json';
+/* --------------------- CONSTANTS --------------------- */
 
 // the full anatomy picture, zoomed out
 const FULL_VIEW = { x: 0, y: 0, width: 600, height: 600 };
@@ -58,11 +60,12 @@ function respectReducedMotion() {
 
 // downloads and parses exercises JSON
 async function loadExerciseData() {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) {
-        throw new Error('Request for ' + DATA_URL + ' failed with status ' + response.status);
+    const groupsQuery = query(collection(db, 'groups'), orderBy('order'));
+    const snapshot = await getDocs(groupsQuery);
+    if (snapshot.empty) {
+        throw new Error('No exercise groups found');
     }
-    return response.json();
+    return { groups: snapshot.docs.map(groupDoc => groupDoc.data()) };
 }
 
 // returns the group whose id matches groupId or undefined
@@ -389,4 +392,11 @@ function setUpPage() {
     loadAndStart();
 }
 
-$(setUpPage);
+// wait until Firebase knows whether someone is logged in
+onAuthStateChanged(auth, user => {
+    if (user) {
+        $(setUpPage);
+    } else {
+        window.location.replace('login.html?next=' + encodeURIComponent(window.location.pathname.split('/').pop()));
+    }
+});

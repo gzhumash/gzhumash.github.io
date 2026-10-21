@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dani Zhumasheva">
+    <meta name="description" content="Log in to Muscle Map to view data.">
+    <title>Log In | Muscle Map</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Muscle Map">
+    <meta property="og:title" content="Log In | Muscle Map">
+    <meta property="og:description" content="Pick a muscle. Get the exercises.">
+    <meta property="og:image" content="https://gzhumash.github.io/7/assets/img/logo-share.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:image:alt" content="Muscle Map logo, a cream dumbbell on a red square">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://gzhumash.github.io/7/assets/img/logo-share.png">
+    
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/login.js"></script>
+
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">
+                <img src="assets/img/favicon.png" alt="">
+                Muscle <span>Map</span>
+            </a>
+            <button type="button" class="btn-login">Log In</button>
+            <nav class="main-nav" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="exercises.html">Exercises</a></li>
+                    <li><a href="fundamentals.html">Fundamentals</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section" aria-labelledby="auth-title">
+            <div class="container auth-layout">
+                <h1 id="auth-title">Log In</h1>
+                <p id="auth-intro">Log in to explore exercises, training fundamentals, and personalized training.</p>
+            
+                <form id="login-form" novalidate>
+                    <fieldset>
+                        <legend>Your Account</legend>
+
+                        <div class="form-row">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" autocomplete="current-password" required>
+                        </div>
+                    </fieldset>
+
+                    <p id="login-message" class="form-message" role="alert"></p>
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </form>
+
+                <form id="signup-form" class="is-hidden" novalidate>
+                    <fieldset>
+                        <legend>Create an Account</legend>
+
+                        <div class="form-row">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" autocomplete="email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="signup-password">Password (at least 6 characters)</label>
+                            <input type="password" id="signup-password" autocomplete="new-password" minlength="6" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="signup-confirm">Confirm Password</label>
+                            <input type="password" id="signup-confirm" autocomplete="new-password" required>
+                        </div>
+                    </fieldset>
+
+                    <p id="signup-message" class="form-message" role="alert"></p>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </form>
+
+                <p class="auth-switch">
+                    <span id="switch-text">Don't have an account?</span>
+                    <button type="button" id="switch-button" class="link-button">Sign up</button>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <p class="footer-brand">Muscle <span>Map</span></p>
+                    <p>A simple guide to what exercise targets what muscle.</p>
+                </div>
+                <nav aria-label="Footer">
+                    <h2>Pages</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="exercises.html">Find Your Exercises</a></li>
+                        <li><a href="fundamentals.html">Training Fundamentals</a></li>
+                        <li><a href="contact.html">Personalized Training</a></li>
+                    </ul>
+                </nav>
+                <div>
+                    <h2>Credits</h2>
+                    <ul>
+                        <li>Anatomy diagram: <cite>Magnific</cite></li>
+                        <li>Tab Icon: <cite>AI-Generated (Claude)</cite></li>
+                        <li>Exercise instructions adapted from <cite><a href="https://www.muscleandstrength.com/exercises">Muscle &amp; Strength</a></cite></li>
+                        <li>Progressive overload info: <cite><a href="https://www.nasm.org/resource-center/blog/training/progressive-overload-explained-programming-progress-for-every-client">NASM</a></cite></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 Dani Zhumasheva for CSCI 3054</p>
+        </div>
+    </footer>
+</body>
+</html>
