@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Firestore</title>
+    <script type="module" src="js/seed.js"></script>
+</head>
+<body>
+    <h1>Seed Firestore</h1>
+
+    <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <button type="submit">Log in</button>
+    </form>
+
+    <button type="button" id="seed-btn" disabled>Upload exercises.json to Firestore</button>
+
+    <p id="status" role="status"></p>
+</body>
+</html>
